@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Highlight Long Words in Paragraph</title>
+    <style>
+      .highlight {
+        background-color: yellow;
+      }
+    </style>
+  </head>
+  <body>
+    <p id="myParagraph">This is a paragraph with some long and short words.</p>
+    <script>
+      const paragraph = document.querySelector("#myParagraph");
+      const words = paragraph.textContent.split(" ");
+
+      for (let i = 0; i < words.length; i++) {
+        if (words[i].length > 8) {
+          const span = document.createElement("span");
+          span.textContent = words[i];
+          span.classList.add("highlight");
+          paragraph.replaceChild(span, paragraph.childNodes[i]);
+        }
+      }
+    </script>
+  </body>
+</html> -->
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Move Image with Arrow Keys</title>
+    <style>
+      #myImage {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    </style>
+  </head>
+  <body>
+    <img id="myImage" src="https://via.placeholder.com/150" alt="My Image">
+    <script>
+      const image = document.querySelector("#myImage");
+      let x = 0;
+      let y = 0;
+
+      document.addEventListener("keydown", (event) => {
+        switch (event.code) {
+          case "ArrowUp":
+            y -= 10;
+            break;
+          case "ArrowDown":
+            y += 10;
+            break;
+          case "ArrowLeft":
+            x -= 10;
+            break;
+          case "ArrowRight":
+            x += 10;
+            break;
+        }
+        image.style.top = y + "px";
+        image.style.left = x + "px";
+      });
+    </script>
+  </body>
+</html>
+

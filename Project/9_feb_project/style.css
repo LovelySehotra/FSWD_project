@@ -1,0 +1,147 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #070e31;
+    color: white;
+    display: grid;
+    grid-template-columns: 1fr;
+  }
+
+  .navigation {
+    display: none;
+  }
+  .hambrger img {
+    height: 20px;
+    width: 20px;
+    cursor: pointer;
+  }
+
+  .section {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-self: center;
+  }
+
+  span {
+    color: rgb(201, 201, 51);
+  }
+
+  .section1 {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    text-align: center;
+  }
+  .section1_left img {
+    height: 20px;
+    width: 20px;
+  }
+
+  .section2 {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    margin: 10px;
+  }
+  .section2 img {
+    cursor: pointer;
+    height: 250px;
+    width: 250px;
+  }
+  .footer {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 5px;
+    margin: 5px;
+  }
+  .footer img {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  body {
+    height: 100vh;
+    width: 100vw;
+    background-color: #070e31;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .hambrger {
+    display: none;
+  }
+  .navigation {
+    margin: 1px;
+  }
+  nav ul {
+    display: flex;
+    justify-content: end;
+    gap: 10px;
+    list-style: none;
+  }
+  nav ul li a {
+    text-decoration: none;
+    color: white;
+    list-style: none;
+  }
+  a:hover {
+    background-color: blue;
+    border-radius: 5px;
+    color: white;
+  }
+  .section1 {
+    display: flex;
+    justify-content: center;
+    margin: 10px;
+    color: white;
+  }
+  .section1_left span{
+    color: rgb(170, 170, 107);
+  }
+  .section2 {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+  }
+  .section2_left {
+    justify-self: center;
+  }
+  .section2_right {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 10px;
+  }
+  .section2_right img {
+    cursor: pointer;
+    height: 250px;
+    width: 250px;
+  }
+  .section2_right div h4 {
+    text-align: center;
+  }
+  .footer {
+    display: grid;
+    justify-content: center;
+    gap: 10px;
+  }
+
+  .footerright {
+    justify-self: center;
+  }
+  .footerright img {
+    cursor: pointer;
+    height: 20px;
+    width: 20px;
+  }
+}

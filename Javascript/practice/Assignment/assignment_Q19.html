@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FormValidation</title>
+    <style>
+        .error {
+            color: red;
+        }
+
+        .success {
+            color: green;
+        }
+    </style>
+</head>
+<body>
+    <form id="loginForm">
+        
+        <label for="email">Email:</label>
+        <input type="text" name="email" id="email">
+        <br>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password">
+        <br>
+        <input type="submit"  value="Submit">
+    </form>
+   <p id="message"></p>
+    <script>
+        document.getElementById("loginForm").addEventListener("submit",function(event){
+            event.preventDefault();
+            var email=document.getElementById("email").value;
+            var password=document.getElementById("password").value;
+            if(!email.includes("@")||password.length<8){
+                displayMessage("Invalid email or password!","error")
+            }
+            else
+            {
+                displayMessage("valid email or password!","error");
+            }
+        
+        });
+        function displayMessage(text,type)
+        {   
+            var message=document.getElementById("message");
+            message.innerHTML=text;
+            message.className = type;
+        }
+    </script>
+</body>
+</html>

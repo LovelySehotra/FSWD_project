@@ -1,0 +1,233 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.body {
+  background-color: #f6f8fa;
+}
+header {
+  height: 110vh;
+  background-image: url(./photo/mainBackground.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.navigation {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  justify-items: center;
+  align-items: center;
+}
+.nav_right ul {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  padding-left: 50px;
+}
+.nav_right ul a {
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: 700;
+  list-style: none;
+  text-decoration: none;
+  color: whitesmoke;
+}
+.nav_right ul a:hover {
+  background-color: rgb(91, 44, 202);
+  border-radius: 15px;
+}
+header hr {
+  width: 1100px;
+  margin-left: 10%;
+}
+.main {
+  margin-top: 20px;
+  padding-left: 15%;
+  width: 550px;
+  color: whitesmoke;
+}
+.main h1 {
+  margin: 20px 0;
+}
+button {
+  margin: 10px 0;
+  cursor: pointer;
+  text-align: center;
+  justify-items: center;
+  padding: 9px 15px;
+  background-color: rgb(91, 44, 202);
+  color: whitesmoke;
+  border-color: rgb(91, 44, 202);
+  border-radius: 15px;
+}
+button:hover {
+  background-color: purple;
+}
+.first {
+  background-color: ;
+}
+.section1 {
+  height: 100px;
+  width: 800px;
+  margin-left: 17%;
+  margin-top: -50px;
+  padding: 10px 500px;
+
+  background-color: #f6f8fa;
+  border-radius: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 150px;
+}
+.section1 img {
+  height: 60px;
+  width: 100px;
+}
+.section2 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 60px;
+}
+.section2_heading {
+  margin: 40px;
+  font-size: 55px;
+  font-weight: 400;
+}
+.section2_bottom {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  row-gap: 80px;
+}
+.section2_bottom img {
+  height: 550px;
+  width: 500px;
+  border-radius: 10px;
+  margin-bottom: -40px;
+  margin-left: 2px;
+}
+.house_detail {
+  display: flex;
+  background-color: #f6f8fa;
+  width: 450px;
+  border-radius: 10px;
+  color: antiquewhite;
+  align-items: center;
+  justify-content: space-between;
+  padding: 25px 20px;
+}
+.house_Location h2 {
+  color: black;
+}
+.house_detail h5 {
+  color: rgb(91, 44, 202);
+}
+.house {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.down1 {
+  margin-top: 30px;
+}
+.down2 {
+  margin-top: 60px;
+}
+/* designing both the features section of the website */
+.features-section {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 250px;
+}
+
+.features-section div {
+  width: 50%;
+}
+
+.first-feature-section div:first-child img:first-child {
+  position: absolute;
+  left: -80px;
+  z-index: -1;
+  width: 726px;
+  height: 456px;
+}
+
+.first-feature-section div:first-child img:last-child {
+  position: relative;
+  width: 405px;
+  height: 405px;
+  border-radius: 51px;
+  bottom: 55px;
+  left: 110px;
+}
+.first-feature-section div:last-child {
+  padding-right: 300px;
+}
+.first-feature-section div:last-child h1 {
+  font-weight: 800;
+  font-size: 85px;
+}
+.second-feature-section div:first-child {
+  padding-left: 300px;
+}
+.second-feature-section div:first-child h1 {
+  font-weight: 800;
+  font-size: 85px;
+}
+.second-feature-section div:last-child{
+    position: relative;
+    padding-left: 370px;
+}
+.second-feature-section div:last-child img:first-child {
+    position: relative;
+    
+    width: 726px;
+    height: 456px;
+  }
+.second-feature-section div:last-child img:last-child {
+    position: absolute;
+    width: 355px;
+    height: 345px;
+    /* z-index: -1; */
+    border-radius: 51px;
+    bottom: 55px;
+    margin-left: 100px;
+    margin-bottom: 50px;
+    /* left: 110px; */
+  }
+.section4{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  width: 600px;
+  margin-left:35%;
+  margin-top: 40px ;
+  margin-bottom: 40px;
+  gap: 10px;
+  background-color: rgb(70, 38, 176);
+  border-radius: 20px;
+  padding: 20px 40px;
+}
+.section_top h1{
+font-size: 40px;
+font-weight: 900;
+}
+footer{
+  display: grid;
+  grid-template-columns: 1.5fr 1fr 1fr 1fr;
+  gap: 40px;
+  justify-items: center;
+  padding-left: 30px;
+}
+footer ul li{
+  list-style: none;
+  margin: 10px;
+
+
+}
+
