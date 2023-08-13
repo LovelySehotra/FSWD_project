@@ -1,0 +1,16 @@
+.img-details-wrapper{
+    display: flex;
+    background-color: aqua;
+}
+.imgdetails-box{
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+
+}
+.img-details{
+    font-size: xx-large;
+    color: black;
+    margin-top: 1rem;
+    
+}

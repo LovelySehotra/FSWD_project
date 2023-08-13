@@ -5,18 +5,16 @@ import ImgGall from "../ImgGall/ImgGall";
 
 function ImgList() {
     const [imgList, setImgList] = useState([]);
-    const [isloading, setIsloading] = useState(true);
+    const [isloading, setIsloading] = useState(true);//isloading showing during the data is fetching from server
     const imgdexUrl ='https://api.slingacademy.com/v1/sample-data/photos?offset=5&limit=20';
     async function downloadImage(){
         setIsloading(true);
-        const response = await axios.get(imgdexUrl);
-        const imgResult = response.data.photos;
+        const response = await axios.get(imgdexUrl);//fetch the data
+        const imgResult = response.data.photos;//we get the array of photo
         console.log(response.data);
         console.log(imgResult);
 
-        // const imgResultPromise = imgResult.map((img)=>
-        //     axios.get(img.url)
-        // );
+       
 
         const imgData = await axios.all(imgResult);
 
