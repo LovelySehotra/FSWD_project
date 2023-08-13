@@ -1,0 +1,9 @@
+.imgGall-img{
+   width: 250px;
+   height: 200px;
+  
+}
+.imgGall-img:hover{
+    color: black;
+    cursor: pointer;
+}

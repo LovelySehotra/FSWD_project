@@ -1,0 +1,9 @@
+.outer-imgdex{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+}
+.imgdex-heading:visited{
+    color: black;
+}

@@ -1,19 +1,22 @@
 
 
+import { Link } from 'react-router-dom';
+import './ImgGall.css'
 
-
-function ImgGall({image})
+function ImgGall({image,id})
 {
 
     return(
         <div className="imgGall">
-            hello
+           <Link to={`/ImgGall/${id}`}>
             <div>
                 <img 
                 className="imgGall-img"
                 src={image} />
             </div>
+            </Link> 
         </div>
+        
     )
 }
 export default ImgGall;

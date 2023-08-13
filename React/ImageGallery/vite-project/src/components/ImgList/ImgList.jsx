@@ -1,11 +1,12 @@
 import { useState ,useEffect} from "react";
 import axios from "axios";
+import './ImgList.css'
 import ImgGall from "../ImgGall/ImgGall";
 
 function ImgList() {
     const [imgList, setImgList] = useState([]);
     const [isloading, setIsloading] = useState(true);
-    const[imgdexUrl , setImgdexUrl] = useState('https://api.slingacademy.com/v1/sample-data/photos?offset=5&limit=20');
+    const imgdexUrl ='https://api.slingacademy.com/v1/sample-data/photos?offset=5&limit=20';
     async function downloadImage(){
         setIsloading(true);
         const response = await axios.get(imgdexUrl);
@@ -38,12 +39,12 @@ useEffect(()=>{
 
 return(
 
-    <div className="pokemon-list-wrapper">
-    <div className="pokemon-wrapper">
+    <div className="img-list-wrapper">
+    <div className="img-wrapper">
       {isloading
         ? "Loading ..."
         : imgList.map((p) => (
-            <ImgGall  image={p.image}  />
+            <ImgGall name={p.title} image={p.image} key={p.id} id={p.id}  />
           ))}
     </div>
    
