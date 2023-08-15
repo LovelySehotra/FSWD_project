@@ -10,7 +10,8 @@ function Pokemon({name,image,id})
         <div className='pokemon-name'>{name}</div>
         <div><img 
         className='pokemon-image'
-        src={image}/></div>
+        src={image}/>
+        </div>
 
       </Link>
     </div>
