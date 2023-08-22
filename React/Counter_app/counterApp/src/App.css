@@ -1,0 +1,39 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+  font-size: larger;
+  background-color: antiquewhite;
+
+}
+
+
+
+
+.card {
+  padding-top: 6em;
+  width: 400px;
+  height: 200px;
+  background-color: #888;
+  border-radius: 10px
+}
+.button{
+  width: 100px;
+  height: 35px;
+  margin: 10px;
+  color: rgb(243, 242, 242);
+  background-color: rgb(28, 15, 15);
+  border-radius: 10px;
+}
+.button:hover{
+  cursor: pointer;
+}
